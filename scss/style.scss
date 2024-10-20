@@ -1494,6 +1494,7 @@
   &.fixed {
     .wrapper {
       .header-info {
+        border-radius: 10px 10px 0 0;
         .menu-wrap {
           position: static;
           width: auto;
