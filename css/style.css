@@ -2401,9 +2401,9 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
 }
-@media (max-width: 1350px) {
+@media (max-width: 1600px) {
   .main-header .wrapper .header-info .menu-wrap .catalog-menu-wrap .links a .img-wrap {
-    max-height: 120px;
+    max-height: 110px;
   }
 }
 @media (max-width: 1200px) {
@@ -2437,7 +2437,7 @@ a:focus {
   width: 100%;
   margin: auto auto 0;
 }
-@media (max-width: 1350px) {
+@media (max-width: 1600px) {
   .main-header .wrapper .header-info .menu-wrap .catalog-menu-wrap .links a .text {
     font-size: 16px;
     padding: 10px 15px 20px;
