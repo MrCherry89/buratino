@@ -1357,6 +1357,9 @@
               @media (max-width: 1024px) {
                 @include justify-around;
               }
+              &:hover {
+                background: #decbb2;
+              }
               .img-wrap {
                 max-height: 130px;
                 padding-top: 10px;
