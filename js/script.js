@@ -92,8 +92,8 @@ $(document).ready(function () {
     slideToScroll: 1,
     centerMode: true,
     variableWidth: true,
-    // autoplay: true,
-    // autoplaySpeed: 1500,
+    autoplay: true,
+    autoplaySpeed: 1500,
   });
 
   $(".select-wrap select").select2({
@@ -105,8 +105,8 @@ $(document).ready(function () {
     arrows: false,
     slidesToShow: 1,
     slideToScroll: 1,
-    // autoplay: true,
-    // autoplaySpeed: 1500,
+    autoplay: true,
+    autoplaySpeed: 1500,
   });
 
   $(".drop-menu").click(function (e) {
