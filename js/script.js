@@ -129,6 +129,15 @@ $(document).ready(function () {
     }
   });
 
+  $(".catalog-menu-wrap").on("click", function (e) {
+    e.stopPropagation();
+  });
+
+  $(document).on("click", function () {
+    $(".catalog-menu-wrap").removeClass("open");
+    $(".drop-menu").removeClass("is-active");
+  });
+
   var lastScrollTop = 0; // Последняя позиция скролла
 
   $(window).scroll(function () {
@@ -190,4 +199,6 @@ $(document).ready(function () {
   $(".heart .icon").on("click", function () {
     $(this).toggleClass("active");
   });
+
+  AOS.init();
 });
