@@ -3019,6 +3019,16 @@ a:focus {
 .header .wrapper .header-info .menu-wrap .catalog-btn .drop-menu {
   margin: auto;
 }
+.header .wrapper .header-info .menu-wrap .catalog-btn .drop-menu.is-active .line:nth-child(1) {
+  -webkit-transform: translateY(10px) rotate(45deg);
+  -ms-transform: translateY(10px) rotate(45deg);
+  -o-transform: translateY(10px) rotate(45deg);
+  transform: translateY(10px) rotate(45deg);
+}
+.header .wrapper .header-info .menu-wrap .catalog-btn .drop-menu .line {
+  width: 26px;
+  margin: 3px auto;
+}
 .header .wrapper .header-info .menu-wrap .catalog-btn .text {
   font-size: 16px;
   font-weight: 600;

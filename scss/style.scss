@@ -1820,6 +1820,16 @@
           }
           .drop-menu {
             margin: auto;
+            &.is-active .line:nth-child(1) {
+              -webkit-transform: translateY(10px) rotate(45deg);
+              -ms-transform: translateY(10px) rotate(45deg);
+              -o-transform: translateY(10px) rotate(45deg);
+              transform: translateY(10px) rotate(45deg);
+            }
+            .line {
+              width: 26px;
+              margin: 3px auto;
+            }
           }
           .text {
             font-size: 16px;
