@@ -96,6 +96,31 @@ $(document).ready(function () {
     autoplaySpeed: 1500,
   });
 
+  $(".info-bottom-slider").slick({
+    dots: false,
+    arrows: false,
+    slidesToShow: 4,
+    slideToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1500,
+    responsive: [
+      {
+        breakpoint: 1301,
+        settings: {
+          variableWidth: true,
+          slidesToShow: 1,
+        },
+      },
+      {
+        breakpoint: 476,
+        settings: {
+          variableWidth: false,
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
+
   $(".select-wrap select").select2({
     minimumResultsForSearch: 6,
   });
