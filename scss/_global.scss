@@ -15,7 +15,7 @@ body {
   background: #f4f1ec;
   padding-top: 120px;
   @media (max-width: 1024px) {
-    padding-top: 80px;
+    padding-top: 90px;
   }
   &.no-padding {
     padding-top: 0;
@@ -308,6 +308,7 @@ a {
   }
   @media (max-width: 767px) {
     font-size: 30px;
+    line-height: 110%;
   }
 }
 

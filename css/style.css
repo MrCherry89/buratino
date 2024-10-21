@@ -25,7 +25,7 @@ body {
 }
 @media (max-width: 1024px) {
   body {
-    padding-top: 80px;
+    padding-top: 90px;
   }
 }
 body.no-padding {
@@ -382,6 +382,7 @@ a:focus {
 @media (max-width: 767px) {
   .main-title {
     font-size: 30px;
+    line-height: 110%;
   }
 }
 
@@ -2213,6 +2214,7 @@ a:focus {
 }
 .main-header .wrapper .header-info .buttons-top .favorite img {
   margin: auto;
+  width: 24px;
 }
 .main-header .wrapper .header-info .buttons-top .num {
   position: absolute;
@@ -3486,6 +3488,125 @@ a:focus {
   .catalog-wrap .catalog-links a .text {
     font-size: 10px;
   }
+}
+
+.registration-wrap {
+  margin-bottom: 150px;
+}
+@media (max-width: 1024px) {
+  .registration-wrap {
+    margin-bottom: 50px;
+  }
+}
+.registration-wrap .wrapper {
+  max-width: 850px;
+}
+.registration-wrap .wrapper .main-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.registration-wrap .wrapper .register-form .input-wrap {
+  max-width: 470px;
+  width: 100%;
+  margin: 0 auto 50px;
+}
+@media (max-width: 767px) {
+  .registration-wrap .wrapper .register-form .input-wrap {
+    margin-bottom: 20px;
+  }
+}
+.registration-wrap .wrapper .register-form .input-wrap span {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #353535;
+}
+.registration-wrap .wrapper .register-form .input-wrap input {
+  padding: 0 20px;
+  height: 50px;
+  border-radius: 10px;
+  width: 100%;
+}
+.registration-wrap .wrapper .register-form p {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #353535;
+}
+@media (max-width: 767px) {
+  .registration-wrap .wrapper .register-form p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+}
+.registration-wrap .wrapper .register-form p b {
+  display: block;
+  text-align: center;
+}
+.registration-wrap .wrapper .register-form button {
+  max-width: 470px;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 10px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #4c7972;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+}
+.registration-wrap .wrapper .register-form button:hover {
+  background: #5a8f87;
+}
+
+.thank-wrap {
+  margin-bottom: 100px;
+}
+@media (max-width: 1024px) {
+  .thank-wrap {
+    margin-bottom: 50px;
+  }
+}
+.thank-wrap .info {
+  margin-bottom: 90px;
+}
+@media (max-width: 1024px) {
+  .thank-wrap .info {
+    margin-bottom: 50px;
+  }
+}
+.thank-wrap .info .main-title {
+  margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .thank-wrap .info .main-title {
+    margin-bottom: 15px;
+  }
+}
+.thank-wrap .info b {
+  font-weight: bold;
+  font-size: 24px;
+  color: #353535;
+  display: block;
+  margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .thank-wrap .info b {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+}
+.thank-wrap .info p {
+  font-weight: 500;
+  font-size: 16px;
+  color: #353535;
 }
 
 /*# sourceMappingURL=style.css.map */

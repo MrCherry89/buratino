@@ -1206,6 +1206,7 @@
           @include flex;
           img {
             margin: auto;
+            width: 24px;
           }
         }
         .num {
@@ -2183,6 +2184,107 @@
           font-size: 10px;
         }
       }
+    }
+  }
+}
+
+.registration-wrap {
+  margin-bottom: 150px;
+  @media (max-width: 1024px) {
+    margin-bottom: 50px;
+  }
+  .wrapper {
+    max-width: 850px;
+    .main-title {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .register-form {
+      .input-wrap {
+        max-width: 470px;
+        width: 100%;
+        margin: 0 auto 50px;
+        @media (max-width: 767px) {
+          margin-bottom: 20px;
+        }
+        span {
+          display: block;
+          margin-bottom: 10px;
+          font-size: 16px;
+          color: #353535;
+        }
+        input {
+          padding: 0 20px;
+          height: 50px;
+          border-radius: 10px;
+          width: 100%;
+        }
+      }
+      p {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #353535;
+        @media (max-width: 767px) {
+          font-size: 14px;
+          margin-bottom: 20px;
+        }
+        b {
+          display: block;
+          text-align: center;
+        }
+      }
+      button {
+        max-width: 470px;
+        width: 100%;
+        margin: 0 auto;
+        border-radius: 10px;
+        height: 40px;
+        @include flex;
+        @include align-center;
+        @include justify-center;
+        background: #4c7972;
+        font-size: 14px;
+        font-weight: bold;
+        color: white;
+        &:hover {
+          background: lighten(#4c7972, 7%);
+        }
+      }
+    }
+  }
+}
+
+.thank-wrap {
+  margin-bottom: 100px;
+  @media (max-width: 1024px) {
+    margin-bottom: 50px;
+  }
+  .info {
+    margin-bottom: 90px;
+    @media (max-width: 1024px) {
+      margin-bottom: 50px;
+    }
+    .main-title {
+      margin-bottom: 20px;
+      @media (max-width: 767px) {
+        margin-bottom: 15px;
+      }
+    }
+    b {
+      font-weight: bold;
+      font-size: 24px;
+      color: #353535;
+      display: block;
+      margin-bottom: 20px;
+      @media (max-width: 767px) {
+        font-size: 20px;
+        margin-bottom: 15px;
+      }
+    }
+    p {
+      font-weight: 500;
+      font-size: 16px;
+      color: #353535;
     }
   }
 }
