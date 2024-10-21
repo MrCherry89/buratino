@@ -8,7 +8,7 @@ $(document).ready(function () {
     $(this).closest(".wrapper").find(".texts").toggleClass("show");
     $(this).closest(".wrapper").find(".texts  img").toggleClass("hide");
     if ($(".texts").hasClass("show")) {
-      $(".expand").text("Скрыть полностью");
+      $(".expand").text("Скрыть");
     } else {
       $(".expand").text("Раскрыть полностью");
     }
