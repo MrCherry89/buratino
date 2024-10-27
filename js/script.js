@@ -225,5 +225,81 @@ $(document).ready(function () {
     $(this).toggleClass("active");
   });
 
+  // Открытие/закрытие фильтра при клике на .filter-top
+  $(".sorting-filter-btn .sorting-filter-top").on("click", function () {
+    $(this).closest(".sorting-filter-btn").toggleClass("no-radius");
+    $(this).siblings(".sorting-filter-bottom").toggleClass("open");
+  });
+
+  // Изменение текста и закрытие фильтра при выборе элемента
+  $(".sorting-filter-bottom .item").on("click", function () {
+    let itemText = $(this).find(".text").text(); // Текст выбранного элемента
+    $(".sorting-filter-top .text").text(itemText); // Замена текста в .filter-top
+    $(".sorting-filter-bottom").removeClass("open"); // Закрытие меню
+    $(".sorting-filter-btn").removeClass("no-radius"); // Возврат радиуса
+
+    // Обновление активного элемента
+    $(".sorting-filter-bottom .item").removeClass("active"); // Удаление активного класса у всех элементов
+    $(this).addClass("active"); // Добавление активного класса к выбранному элементу
+  });
+
+  $(".sorting-filter-mob-btn").on("click", function () {
+    $(".left-info").toggleClass("show");
+  });
+
+  $(".close-filter").on("click", function () {
+    $(".left-info").removeClass("show");
+  });
+
+  $(".show-all").on("click", function (e) {
+    e.preventDefault();
+    $(this)
+      .closest(".right-info")
+      .find(".items .product-item-new")
+      .removeClass("hide");
+    $(this).hide();
+  });
+
+  $(".info-wrapper .title-top").on("click", function () {
+    $(this).closest(".info-wrapper").find(".info").toggleClass("hide");
+    $(this).find("button").toggleClass("rotate");
+    $(this).closest(".info-wrapper").find(".title-top").toggleClass("margin");
+  });
+
+  $(".popup-youtube, .popup-vimeo, .popup-gmaps").magnificPopup({
+    disableOn: 700,
+    type: "iframe",
+    mainClass: "mfp-fade",
+    removalDelay: 160,
+    preloader: false,
+
+    fixedContentPos: false,
+  });
+
+  const range = document.querySelectorAll(".range-slider span input");
+  progress = document.querySelector(".range-slider .progress");
+  let gap = 0.1;
+  const inputValue = document.querySelectorAll(".numberVal input");
+
+  range.forEach((input) => {
+    input.addEventListener("input", (e) => {
+      let minRange = parseInt(range[0].value);
+      let maxRange = parseInt(range[1].value);
+
+      if (maxRange - minRange < gap) {
+        if (e.target.className === "range-min") {
+          range[0].value = maxRange - gap;
+        } else {
+          range[1].value = minRange + gap;
+        }
+      } else {
+        progress.style.left = (minRange / range[0].max) * 100 + "%";
+        progress.style.right = 100 - (maxRange / range[1].max) * 100 + "%";
+        inputValue[0].value = minRange;
+        inputValue[1].value = maxRange;
+      }
+    });
+  });
+
   AOS.init();
 });
