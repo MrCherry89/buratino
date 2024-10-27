@@ -682,3 +682,15 @@ a {
   border-radius: 20px;
   opacity: 1;
 }
+
+.test-links {
+  margin: 30px 0;
+  li {
+    margin: 10px 0;
+    a {
+      font-size: 24px;
+      font-weight: 600;
+      color: #4c7972;
+    }
+  }
+}

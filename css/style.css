@@ -783,6 +783,18 @@ a:focus {
   opacity: 1;
 }
 
+.test-links {
+  margin: 30px 0;
+}
+.test-links li {
+  margin: 10px 0;
+}
+.test-links li a {
+  font-size: 24px;
+  font-weight: 600;
+  color: #4c7972;
+}
+
 @font-face {
   font-family: "Involve";
   src: url("../fonts/Involve-Bold.woff2") format("woff2"), url("../fonts/Involve-Bold.woff") format("woff"), url("../fonts/Involve-Bold.ttf") format("truetype");
