@@ -178,10 +178,12 @@
             </button>
           </form>
           <div class="phone-wrap">
-            <a href="tel:+77272222525" class="phone"
+            <a href="#order-call-popup" class="phone popup"
               >+7 (727) 222 25 25 <img src="img/phone-icon.svg" alt=""
             /></a>
-            <a href="#" class="order-call">заказать звонок</a>
+            <a href="#order-call-popup" class="order-call popup"
+              >заказать звонок</a
+            >
           </div>
           <div class="buttons-top">
             <div class="select-wrap">
@@ -616,6 +618,59 @@
       </div>
     </footer>
 
+    <div id="stock-popup" class="mfp-hide white-popup mfp-with-anim main-popup">
+      <div class="popup-body">
+        <button title="Close (Esc)" type="button" class="mfp-close"></button>
+        <div class="popup-info">
+          <div class="texts">
+            <b>Скидка 15% на покупку камней для бани</b>
+            <span>Подробные условия уточняйте у наших менеджеров</span>
+          </div>
+          <div class="img-wrap">
+            <img src="img/stock-popup-img.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="order-call-popup"
+      class="mfp-hide white-popup mfp-with-anim main-popup"
+    >
+      <div class="popup-body">
+        <button title="Close (Esc)" type="button" class="mfp-close"></button>
+        <div class="popup-info">
+          <form class="order-call-form" id="order-call-form">
+            <h2 class="main-title">Закажите обратный звонок</h2>
+            <p>
+              Заполните форму ниже, и наш менеджер свяжется с Вами в течение 20
+              минут и ответит на все Ваши вопросы
+            </p>
+            <div class="form-wrap">
+              <input type="text" placeholder="Ваше имя" />
+              <input
+                type="tel"
+                placeholder="+7 (999) 999-99-99"
+                class="phone-number-input"
+              />
+              <button class="green-btn">Заказать обратный звонок</button>
+              <div class="checkbox-wrap2">
+                <label>
+                  <input type="checkbox" checked />
+                  <span></span>
+                  Я даю согласие на
+                  <a href="#">обработку персональных данных</a>
+                </label>
+              </div>
+            </div>
+          </form>
+          <div class="img-wrap">
+            <img src="img/order-call-popup-img.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.smooth-scroll.min.js"></script>
@@ -623,6 +678,7 @@
     <script src="js/select2.min.js"></script>
     <script src="js/aos.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.validate.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

@@ -198,6 +198,15 @@ $(document).ready(function () {
     ],
   });
 
+  $(".phone-number-input").inputmask({
+    mask: "+7 (999)-999-99-99",
+  });
+
+  $(".popup").magnificPopup({
+    type: "inline",
+    mainClass: "mfp-fade",
+  });
+
   $(".popular-slider").slick({
     dots: true,
     arrows: true,
@@ -264,6 +273,10 @@ $(document).ready(function () {
     $(this).closest(".info-wrapper").find(".info").toggleClass("hide");
     $(this).find("button").toggleClass("rotate");
     $(this).closest(".info-wrapper").find(".title-top").toggleClass("margin");
+  });
+
+  $("#order-call-form").validate({
+    errorPlacement: function (error, element) {},
   });
 
   $(".popup-youtube, .popup-vimeo, .popup-gmaps").magnificPopup({
