@@ -112,9 +112,18 @@ $(document).ready(function () {
         },
       },
       {
+        breakpoint: 1025,
+        settings: {
+          autoplay: false,
+          variableWidth: true,
+          slidesToShow: 1,
+        },
+      },
+      {
         breakpoint: 476,
         settings: {
           variableWidth: false,
+          autoplay: false,
           slidesToShow: 1,
         },
       },
@@ -277,6 +286,23 @@ $(document).ready(function () {
 
   $("#order-call-form").validate({
     errorPlacement: function (error, element) {},
+  });
+
+  let lastScrollTop3 = 0;
+  const header = $(".header");
+
+  $(window).on("scroll", function () {
+    let scrollTop = $(this).scrollTop();
+
+    if (scrollTop > lastScrollTop3) {
+      header.addClass("header-fixed");
+    } else {
+      if (scrollTop === 0) {
+        header.removeClass("header-fixed");
+      }
+    }
+
+    lastScrollTop3 = scrollTop;
   });
 
   $(".popup-youtube, .popup-vimeo, .popup-gmaps").magnificPopup({
