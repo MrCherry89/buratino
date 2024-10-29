@@ -213,27 +213,111 @@
       </div>
     </header>
 
-    <div class="wrapper">
-      <ul class="test-links">
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="thank.html">Спасибо</a></li>
-        <li><a href="videos.html">Видео</a></li>
-        <li><a href="nothing-found.html">Не найдено</a></li>
-        <li><a href="search-results.html">Результаты поиска</a></li>
-        <li><a href="registration.html">Регистрация</a></li>
-        <li><a href="catalog.html">Каталог</a></li>
-        <li><a href="articles.html">Статьи</a></li>
-        <li><a href="catalog-in.html">Категории</a></li>
-        <li><a href="stock.html">Акции</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
-        <li><a href="account-address.html">Мои адреса</a></li>
-        <li><a href="account-favorite.html">Избранное</a></li>
-        <li><a href="account-profile.html">Настройки профиля</a></li>
-        <li><a href="placing-order.html">Оформление заказа</a></li>
-        <li><a href="placing-order-legal.html"> Оплата ЮЛ</a></li>
-        <li><a href="placing-order-pickup.html">Самовывоз</a></li>
-        <li><a href="placing-order-delivery.html">Доставка курьером </a></li>
-      </ul>
+    <div class="placing-order">
+      <div class="wrapper">
+        <ul class="breadcrumbs">
+          <li><a href="#">Главная</a></li>
+          <li><span>Оформление заказа</span></li>
+        </ul>
+        <h2 class="main-title">Оформление заказа</h2>
+        <h3>Контактная информация</h3>
+        <form class="placing-order-form">
+          <div class="left">
+            <div class="info-inputs">
+              <div class="info">
+                <input type="text" placeholder="Имя *" />
+                <input type="text" placeholder="Фамилия *" />
+              </div>
+              <div class="info">
+                <input
+                  type="tel"
+                  class="phone-number-input"
+                  placeholder="+7 (700) 777-66-66"
+                />
+                <input type="email" placeholder="E-mail *" />
+              </div>
+            </div>
+            <div class="method">
+              <h3>
+                Способ получения
+                <span>Выберите удобный способ получения заказа</span>
+              </h3>
+              <div class="links">
+                <a href="#">Доставка курьером по адресу</a>
+                <a href="#" class="active">Самовывоз</a>
+              </div>
+              <div class="pickup">
+                <b>Выберите пункт самовывоза</b>
+                <div class="select-wrap">
+                  <select>
+                    <option value="1">Выберите пункт из списка</option>
+                    <option value="2">Рынок “Жетысу”, сектор Д, место 5</option>
+                    <option value="3">Рынок “Тау Самал”, место 14-15</option>
+                    <option value="4">ул. Радостовца, 299</option>
+                    <option value="5">Рынок Саламат 5, Бутик 6</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="payment">
+              <h3>
+                Способ оплаты
+                <span>Выберите удобный способ оплаты заказа</span>
+              </h3>
+              <div class="payment-links">
+                <a href="#">
+                  <span>Оплата</span>
+                  <img src="img/brand1.png" alt="" />
+                </a>
+                <a href="#">
+                  <span>Оплата картой</span>
+                  <img src="img/brand2.png" alt="" />
+                </a>
+                <a href="#">
+                  <span>Счет на оплату для юр. лиц</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="right">
+            <h3>Ваш заказ</h3>
+            <div class="info">
+              <p>Евровагонка штиль 14×135, Кедр Алтайский, 2 шт.</p>
+              <div class="texts">
+                <span>Сумма:</span>
+                <b>18 875 ₸ м2</b>
+              </div>
+            </div>
+            <div class="info">
+              <p>Евровагонка штиль 14×135, Кедр Алтайский, 2 шт.</p>
+              <div class="texts">
+                <span>Сумма:</span>
+                <b>18 875 ₸ м2</b>
+              </div>
+            </div>
+            <div class="info">
+              <p>Евровагонка штиль 14×135, Кедр Алтайский, 2 шт.</p>
+              <div class="texts">
+                <span>Сумма:</span>
+                <b>18 875 ₸ м2</b>
+              </div>
+            </div>
+            <p class="text">
+              Дата и стоимость доставки или самовывоза определяются при
+              оформлении заказа
+            </p>
+            <div class="itog">
+              <span>Итого:</span>
+              <b class="price">56 625 ₸</b>
+            </div>
+            <button class="green-btn">Оформить заказ</button>
+            <p class="bottom-text">
+              Нажимая эту кнопку, я даю согласие на обработку
+              <a href="#">персональных данных</a>
+            </p>
+          </div>
+        </form>
+      </div>
     </div>
 
     <footer class="footer">
@@ -334,6 +418,7 @@
     <script src="js/select2.min.js"></script>
     <script src="js/aos.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.validate.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
