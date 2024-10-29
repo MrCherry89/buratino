@@ -1474,3 +1474,188 @@ input.error {
     padding: 20px;
   }
 }
+
+.account {
+  margin-bottom: 60px;
+  @media (max-width: 475px) {
+    margin-bottom: 50px;
+  }
+  .main-title {
+    margin-bottom: 20px;
+  }
+  .account-info {
+    @include flex;
+    @include justify-between;
+    @media (max-width: 767px) {
+      @include dir-col;
+    }
+    .links {
+      width: 300px;
+      margin-right: 60px;
+      min-width: 300px;
+      @media (max-width: 1024px) {
+        min-width: 240px;
+        width: 240px;
+        margin-right: 20px;
+      }
+      @media (max-width: 767px) {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+      a {
+        width: 100%;
+        @include flex;
+        @include align-center;
+        @include justify-center;
+        height: 50px;
+        border-radius: 10px;
+        border: 1px solid #39281c;
+        margin-bottom: 15px;
+        padding: 14px 30px;
+        color: #39281c;
+        font-weight: 600;
+        &.active {
+          color: white;
+          background: #4c7972;
+          border-color: #4c7972;
+        }
+      }
+    }
+    form {
+      max-width: 760px;
+      width: 100%;
+      .input-wrap {
+        @include flex;
+        @include align-center;
+        margin-bottom: 20px;
+        @media (max-width: 475px) {
+          @include dir-col;
+          align-items: flex-start;
+        }
+        b {
+          padding-right: 10px;
+          min-width: 100px;
+          color: #39281c;
+          font-weight: bold;
+          font-size: 16px;
+          @media (max-width: 475px) {
+            margin-bottom: 10px;
+          }
+        }
+        input {
+          background: #fff;
+          border-radius: 10px;
+          padding: 0 20px;
+          height: 50px;
+          width: 100%;
+          font-size: 16px;
+          color: #39281c;
+        }
+        .input {
+          position: relative;
+          width: calc(100% - 100px);
+          @media (max-width: 475px) {
+            width: 100%;
+          }
+          .change {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 16px;
+            color: #4c7972;
+            border-bottom: 1px solid #4c7972;
+            transition: 0.3s;
+            cursor: pointer;
+            &:hover {
+              border-color: transparent;
+            }
+          }
+          input {
+            background: #fff;
+            border-radius: 10px;
+            padding: 0 20px;
+            height: 50px;
+            width: 100%;
+            font-size: 16px;
+            color: #39281c;
+          }
+        }
+        .top {
+          @include flex;
+          @include align-center;
+          @include justify-between;
+          width: 100%;
+          margin-bottom: 15px;
+          b {
+            font-weight: bold;
+            color: #39281c;
+            font-size: 16px;
+            display: inline-block;
+          }
+          .delete {
+            font-size: 16px;
+            border-bottom: 1px solid #9c9c9c;
+            color: #9c9c9c;
+          }
+        }
+      }
+      .green-btn {
+        max-width: 370px;
+        width: 100%;
+        height: 50px;
+        @media (max-width: 1024px) {
+          max-width: 100%;
+        }
+      }
+      .change-password {
+        b {
+          display: block;
+          font-size: 16px;
+          font-weight: bold;
+          margin-bottom: 15px;
+          color: #030303;
+        }
+        .inputs {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 20px;
+          margin-bottom: 20px;
+          @media (max-width: 1024px) {
+            grid-template-columns: 1fr;
+          }
+          input {
+            background: #fff;
+            border-radius: 10px;
+            padding: 0 20px;
+            height: 50px;
+            font-size: 16px;
+            color: #39281c;
+          }
+        }
+      }
+      &.address-form {
+        .input-wrap {
+          @include dir-col;
+        }
+      }
+    }
+    .favorite-items {
+      flex-grow: 1;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 15px;
+      @media (max-width: 1250px) {
+        grid-template-columns: 1fr 1fr;
+      }
+      .product-item-new {
+        @media (max-width: 1250px) {
+          &:nth-child(n + 7) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
