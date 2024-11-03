@@ -85,6 +85,24 @@ $(document).ready(function () {
     ],
   });
 
+  $(".useful-slider").slick({
+    dots: true,
+    arrows: true,
+    slidesToShow: 2,
+    slideToScroll: 1,
+    prevArrow: $(".useful-articles .slider-navigation .slick-prev"),
+    nextArrow: $(".useful-articles .slider-navigation .slick-next"),
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          variableWidth: true,
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
+
   $(".tab-menu li button").on("click", function (e) {
     e.preventDefault();
     $(this).closest(".tab-menu").find("li").removeClass("active");
@@ -116,6 +134,46 @@ $(document).ready(function () {
       .find(".questions__item-body")
       .slideToggle();
     $(this).closest(".questions__item").toggleClass("active");
+  });
+
+  $(".product-count .btn-minus").addClass("btn-disabled");
+
+  $(".product-count .input-number").on("change", function () {
+    if ($(this).val() == 1) {
+      $(this)
+        .closest(".product-count")
+        .find(".btn-minus")
+        .addClass("btn-disabled");
+    } else {
+      $(this)
+        .closest(".product-count")
+        .find(".btn-minus")
+        .removeClass("btn-disabled");
+    }
+  });
+
+  $(".btn-minus").on("click", function (e) {
+    e.preventDefault();
+    var number =
+      parseInt($(this).closest(".product-count").find(".input-number").val()) -
+      1;
+    $(this)
+      .closest(".product-count")
+      .find(".input-number")
+      .val(number > 0 ? number : 1)
+      .change();
+  });
+
+  $(".btn-plus").on("click", function (e) {
+    e.preventDefault();
+    var number =
+      parseInt($(this).closest(".product-count").find(".input-number").val()) +
+      1;
+    $(this)
+      .closest(".product-count")
+      .find(".input-number")
+      .val(number)
+      .change();
   });
 
   $(".info-top-slider").slick({
@@ -266,6 +324,54 @@ $(document).ready(function () {
       },
     ],
   });
+
+  $(".review-slider").slick({
+    dots: true,
+    arrows: true,
+    slidesToShow: 2,
+    slideToScroll: 1,
+    prevArrow: $(".review-slider-wrap .slider-navigation .slick-prev"),
+    nextArrow: $(".review-slider-wrap .slider-navigation .slick-next"),
+    responsive: [
+      {
+        breakpoint: 1000,
+        settings: {
+          variableWidth: true,
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
+
+  function initializeSliders() {
+    $(".product-page-slider").each(function () {
+      $(this).slick({
+        dots: true,
+        arrows: true,
+        slidesToShow: 1,
+        variableWidth: true,
+        slideToScroll: 1,
+        prevArrow: $(this)
+          .closest(".product-page-wrap")
+          .find(".slider-navigation .slick-prev"),
+        nextArrow: $(this)
+          .closest(".product-page-wrap")
+          .find(".slider-navigation .slick-next"),
+        responsive: [
+          {
+            breakpoint: 1025,
+            settings: {
+              variableWidth: true,
+              slidesToShow: 1,
+            },
+          },
+        ],
+      });
+    });
+  }
+
+  // Вызови функцию для инициализации слайдеров
+  initializeSliders();
 
   $(".basket-button").on("click", function () {
     $(this).hide();
