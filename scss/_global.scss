@@ -4,6 +4,16 @@ html {
   font-family: "Involve";
   &.overflow {
     overflow: hidden !important;
+    position: relative;
+    &:after {
+      content: "";
+      background: rgba(black, 0.5);
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
   }
 }
 
@@ -1306,6 +1316,12 @@ input.error {
             font-size: 34px;
             font-weight: bold;
             color: #353535;
+            @media (max-width: 1024px) {
+              font-size: 24px;
+            }
+            @media (max-width: 767px) {
+              font-size: 20px;
+            }
           }
           p {
             display: grid;
@@ -1315,6 +1331,11 @@ input.error {
             margin-bottom: 20px;
             @media (max-width: 767px) {
               grid-template-columns: 1fr;
+              padding-bottom: 16px;
+              border-bottom: 1px solid #cecece;
+              &:last-child {
+                border: none;
+              }
             }
             span {
               @include flex;
@@ -1328,8 +1349,7 @@ input.error {
           }
         }
       }
-      #map,
-      #map2 {
+      .map-wrap {
         width: calc((100% - 20px) / 2);
         height: 660px;
         border-radius: 10px;
@@ -1337,6 +1357,22 @@ input.error {
         @media (max-width: 1024px) {
           width: 100%;
           height: 460px;
+        }
+        h2 {
+          margin-bottom: 20px;
+          font-size: 34px;
+          font-weight: bold;
+          margin-bottom: 20px;
+          color: #353535;
+          @media (max-width: 1024px) {
+            font-size: 30px;
+          }
+        }
+        #map,
+        #map2 {
+          width: 100%;
+          height: 100%;
+          border-radius: 10px;
         }
       }
     }

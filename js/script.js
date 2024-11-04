@@ -112,28 +112,33 @@ $(document).ready(function () {
     $(".tab-content-item").eq(index).addClass("active");
   });
 
+  // Открываем первый вопрос по умолчанию
+  $(".questions__item").first().addClass("opened active");
+  $(".questions__item")
+    .first()
+    .find(".questions__item-body")
+    .addClass("active")
+    .slideDown();
+  $(".questions__item").first().find(".icon").addClass("rotate");
+
   $(".questions__item .questions__item-heading").on("click", function (e) {
     e.preventDefault();
-    if ($(this).find(".icon").hasClass("rotate")) {
-      $(this).find(".icon").removeClass("rotate");
-    } else {
-      $(".questions__item span").removeClass("rotate");
-      $(this).find("span").addClass("rotate");
+
+    // Проверяем, открыт ли уже этот вопрос
+    const currentItem = $(this).closest(".questions__item");
+    const isAlreadyOpen = currentItem.hasClass("opened");
+
+    // Закрываем все вопросы
+    $(".questions__item").removeClass("opened active");
+    $(".questions__item-body").removeClass("active").slideUp();
+    $(".questions__item .icon").removeClass("rotate");
+
+    // Если текущий вопрос не был открыт, открываем его
+    if (!isAlreadyOpen) {
+      currentItem.addClass("opened active");
+      currentItem.find(".questions__item-body").addClass("active").slideDown();
+      $(this).find(".icon").addClass("rotate");
     }
-    $(".questions__item").removeClass("opened");
-    $(".questions__item-body").removeClass("active");
-    $(this)
-      .closest(".questions__item")
-      .find(".questions__item-body")
-      .addClass("active");
-    $(this).closest(".questions__item").addClass("opened");
-    $(".questions__item-body:not(.active)").slideUp();
-    $(".questions__item:not(.opened)").removeClass("active");
-    $(this)
-      .closest(".questions__item")
-      .find(".questions__item-body")
-      .slideToggle();
-    $(this).closest(".questions__item").toggleClass("active");
   });
 
   $(".product-count .btn-minus").addClass("btn-disabled");
@@ -185,6 +190,7 @@ $(document).ready(function () {
     variableWidth: true,
     autoplay: true,
     autoplaySpeed: 1500,
+    speed: 800,
   });
 
   $(".info-bottom-slider").slick({
@@ -193,7 +199,8 @@ $(document).ready(function () {
     slidesToShow: 4,
     slideToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 1500,
+    autoplaySpeed: 2000,
+    speed: 1000,
     responsive: [
       {
         breakpoint: 1301,
@@ -239,6 +246,8 @@ $(document).ready(function () {
     $(this).toggleClass("is-active");
     $(".catalog-menu-wrap").toggleClass("open");
     $(".menu-wrap").toggleClass("radius");
+    $("body, html").toggleClass("overflow");
+    $(".header-info").toggleClass("bg");
   });
 
   $(".catalog-menu-wrap .close").click(function (e) {
@@ -261,6 +270,8 @@ $(document).ready(function () {
   $(document).on("click", function () {
     $(".catalog-menu-wrap").removeClass("open");
     $(".drop-menu").removeClass("is-active");
+    $("body, html").removeClass("overflow");
+    $(".header-info").removeClass("bg");
   });
 
   var lastScrollTop = 0; // Последняя позиция скролла
