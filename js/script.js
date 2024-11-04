@@ -334,7 +334,7 @@ $(document).ready(function () {
     nextArrow: $(".review-slider-wrap .slider-navigation .slick-next"),
     responsive: [
       {
-        breakpoint: 1000,
+        breakpoint: 1300,
         settings: {
           variableWidth: true,
           slidesToShow: 1,
@@ -477,6 +477,49 @@ $(document).ready(function () {
         inputValue[1].value = maxRange;
       }
     });
+  });
+
+  $(".slider-for").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: false,
+    asNavFor: ".slider-nav",
+  });
+  $(".slider-nav").slick({
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    asNavFor: ".slider-for",
+    dots: false,
+    arrows: true,
+    focusOnSelect: true,
+    prevArrow: $(".slider-nav-wrap .slider-navigation .slick-prev"),
+    nextArrow: $(".slider-nav-wrap .slider-navigation .slick-next"),
+    responsive: [
+      {
+        breakpoint: 1301,
+        settings: {
+          slidesToShow: 5,
+          focusOnSelect: true,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          vertical: false,
+          centerMode: true,
+          slidesToShow: 3,
+          focusOnSelect: true,
+        },
+      },
+      {
+        breakpoint: 550,
+        settings: {
+          slidesToShow: 2,
+          focusOnSelect: true,
+        },
+      },
+    ],
   });
 
   AOS.init();

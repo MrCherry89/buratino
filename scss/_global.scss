@@ -2388,3 +2388,31 @@ input.error {
     }
   }
 }
+
+.radio-wrap {
+  cursor: pointer;
+  input[type="radio"] {
+    display: none;
+  }
+
+  input:checked + label {
+    border-color: #4c7972;
+    color: #fff;
+    border-color: #4c7972;
+  }
+
+  label {
+    @include flex;
+    @include align-center;
+    @include justify-center;
+    font-size: 14px;
+    font-weight: 500;
+    color: #353535;
+    border-radius: 3px;
+    transition: 0.3s;
+    border: 1px solid #d9d9d9;
+    padding: 4px;
+    text-align: center;
+    cursor: pointer;
+  }
+}
