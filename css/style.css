@@ -1658,6 +1658,9 @@ input.error {
     margin: 25px 0;
   }
 }
+.questions .main-title {
+  margin-bottom: 30px;
+}
 
 .questions-top {
   display: -webkit-box;
@@ -3415,6 +3418,11 @@ input.error {
     padding-right: 20px;
   }
 }
+@media (max-width: 767px) {
+  .stock-wrap .wrapper .title-wrap .link-green {
+    display: none;
+  }
+}
 @media (max-width: 1200px) {
   .stock-wrap .wrapper .title-wrap .main-title .mobile-hide {
     display: none;
@@ -3523,6 +3531,15 @@ input.error {
   max-width: 100%;
   max-height: 100%;
 }
+.stock-wrap .wrapper > .link-green {
+  display: none;
+}
+@media (max-width: 767px) {
+  .stock-wrap .wrapper > .link-green {
+    display: inline-flex;
+    margin-top: 20px;
+  }
+}
 
 .main-categories {
   margin: 30px 0;
@@ -3547,6 +3564,11 @@ input.error {
     -ms-flex-direction: column;
     flex-direction: column;
     align-items: flex-start;
+  }
+}
+@media (max-width: 767px) {
+  .main-categories .wrapper .title-wrap .link-green {
+    display: none;
   }
 }
 @media (max-width: 767px) {
@@ -3668,6 +3690,15 @@ input.error {
 @media (max-width: 767px) {
   .main-categories .wrapper .main-categories-items .main-categories-item .texts .link-green {
     display: none;
+  }
+}
+.main-categories .wrapper > .link-green {
+  display: none;
+}
+@media (max-width: 767px) {
+  .main-categories .wrapper > .link-green {
+    display: inline-flex;
+    margin-top: 20px;
   }
 }
 
@@ -6165,6 +6196,11 @@ input.error {
     width: calc(50% - 10px);
   }
 }
+@media (max-width: 414px) {
+  .filters-wrap .filters-top-wrap .sorting-filter-mob-btn {
+    width: calc(50% - 5px);
+  }
+}
 .filters-wrap .filters-top-wrap .sorting-filter-mob-btn span {
   font-size: 14px;
   font-weight: 700;
@@ -6180,6 +6216,11 @@ input.error {
 @media (max-width: 767px) {
   .filters-wrap .filters-top-wrap .sorting-filter-btn {
     width: calc(50% - 10px);
+  }
+}
+@media (max-width: 414px) {
+  .filters-wrap .filters-top-wrap .sorting-filter-btn {
+    width: calc(50% - 5px);
   }
 }
 .filters-wrap .filters-top-wrap .sorting-filter-btn .sorting-filter-top {
@@ -7155,6 +7196,9 @@ input.error {
 .product-page-wrapper .product-page-info .info-left .slider-nav-wrap .slider-nav .item img {
   max-width: 100%;
   max-height: 100%;
+}
+.product-page-wrapper .product-page-info .info-right {
+  align-self: flex-start;
 }
 @media (max-width: 1024px) {
   .product-page-wrapper .product-page-info .info-right {

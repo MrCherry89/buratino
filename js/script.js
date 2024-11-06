@@ -141,6 +141,14 @@ $(document).ready(function () {
     }
   });
 
+  $(".heart").on("mouseenter", function () {
+    if ($(this).find(".icon").hasClass("active")) {
+      $(this).find(".tooltip").text("Удалить из избранного");
+    } else {
+      $(this).find(".tooltip").text("Добавить в избранное");
+    }
+  });
+
   $(".product-count .btn-minus").addClass("btn-disabled");
 
   $(".product-count .input-number").on("change", function () {

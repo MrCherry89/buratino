@@ -293,6 +293,7 @@
     @media (max-width: 1200px) {
       padding-right: 0;
     }
+
     .title-wrap {
       margin-bottom: 30px;
       @include flex;
@@ -300,6 +301,11 @@
       @include justify-between;
       @media (max-width: 1200px) {
         padding-right: 20px;
+      }
+      .link-green {
+        @media (max-width: 767px) {
+          display: none;
+        }
       }
       .main-title {
         .mobile-hide {
@@ -394,6 +400,13 @@
         }
       }
     }
+    > .link-green {
+      display: none;
+      @media (max-width: 767px) {
+        display: inline-flex;
+        margin-top: 20px;
+      }
+    }
   }
 }
 
@@ -409,6 +422,11 @@
         margin-bottom: 20px;
         @include dir-col;
         align-items: flex-start;
+      }
+      .link-green {
+        @media (max-width: 767px) {
+          display: none;
+        }
       }
     }
     .main-title {
@@ -500,6 +518,13 @@
             }
           }
         }
+      }
+    }
+    > .link-green {
+      display: none;
+      @media (max-width: 767px) {
+        display: inline-flex;
+        margin-top: 20px;
       }
     }
   }
@@ -2430,6 +2455,9 @@
       @media (max-width: 767px) {
         width: calc(50% - 10px);
       }
+      @media (max-width: 414px) {
+        width: calc(50% - 5px);
+      }
       span {
         font-size: 14px;
         font-weight: 700;
@@ -2444,6 +2472,9 @@
       z-index: 10;
       @media (max-width: 767px) {
         width: calc(50% - 10px);
+      }
+      @media (max-width: 414px) {
+        width: calc(50% - 5px);
       }
       .sorting-filter-top {
         border-radius: 10px;
@@ -3235,12 +3266,6 @@
           left: 0;
           width: 100%;
           transform: translateY(-50%);
-          button {
-            &.slick-next {
-            }
-            &.slick-prev {
-            }
-          }
         }
         .slider-nav {
           .item {
@@ -3258,6 +3283,7 @@
       }
     }
     .info-right {
+      align-self: flex-start;
       @media (max-width: 1024px) {
         width: 100%;
       }
@@ -3361,8 +3387,6 @@
             gap: 4px;
             @media (max-width: 767px) {
               grid-template-columns: 1fr 1fr 1fr;
-            }
-            .radio-wrap {
             }
           }
         }
