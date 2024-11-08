@@ -24,7 +24,8 @@ $(document).ready(function () {
           slideToScroll: 1,
           variableWidth: true,
           autoplay: true,
-          autoplaySpeed: 1000,
+          autoplaySpeed: 2000,
+          speed: 800,
         });
       }
     } else {
@@ -38,6 +39,19 @@ $(document).ready(function () {
 
   $(window).resize(function () {
     initSlickSlider2();
+  });
+
+  $(".comparison .icon").on("click", function () {
+    const icon = $(this).closest(".comparison").find(".icon");
+    const tooltip = $(this).closest(".comparison").find(".tooltip");
+
+    icon.toggleClass("border");
+
+    if (icon.hasClass("border")) {
+      tooltip.text("Добавлено");
+    } else {
+      tooltip.text("Добавить к сравнению");
+    }
   });
 
   $(".stock-slider").slick({
@@ -64,6 +78,34 @@ $(document).ready(function () {
           slidesToShow: 1,
           dots: false,
           arrows: false,
+        },
+      },
+    ],
+  });
+
+  $(".my-orders-slider").slick({
+    dots: false,
+    arrows: true,
+    slidesToShow: 4,
+    slideToScroll: 1,
+    prevArrow: $(".my-orders-slider-wrap .slider-navigation .slick-prev"),
+    nextArrow: $(".my-orders-slider-wrap .slider-navigation .slick-next"),
+    responsive: [
+      {
+        breakpoint: 1201,
+        settings: {
+          variableWidth: true,
+          slidesToShow: 1,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          variableWidth: true,
+          slidesToShow: 1,
+          autoplay: true,
+          autoplaySpeed: 2000,
+          speed: 800,
         },
       },
     ],
