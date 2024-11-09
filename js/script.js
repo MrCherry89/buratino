@@ -494,16 +494,18 @@ $(document).ready(function () {
   $(window).on("scroll", function () {
     let scrollTop = $(this).scrollTop();
 
-    if (scrollTop > lastScrollTop3) {
+    if (scrollTop > 0) {
       header.addClass("header-fixed");
     } else {
-      if (scrollTop === 0) {
-        header.removeClass("header-fixed");
-      }
+      header.removeClass("header-fixed");
     }
 
     lastScrollTop3 = scrollTop;
   });
+
+  if ($(window).scrollTop() > 0) {
+    header.addClass("header-fixed");
+  }
 
   $(".popup-youtube, .popup-vimeo, .popup-gmaps").magnificPopup({
     disableOn: 700,

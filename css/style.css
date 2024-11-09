@@ -3041,6 +3041,7 @@ input.error {
 @media (max-width: 767px) {
   .my-orders-table .table-item p {
     margin-bottom: 15px;
+    font-size: 14px;
   }
 }
 .my-orders-table .table-item .info {
@@ -3090,6 +3091,7 @@ input.error {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    position: relative;
   }
 }
 .my-orders-info .my-orders-slider-wrap {
@@ -3103,6 +3105,7 @@ input.error {
   .my-orders-info .my-orders-slider-wrap {
     width: 100%;
     padding: 0;
+    padding-left: 120px;
   }
 }
 .my-orders-info .my-orders-slider-wrap .slider-navigation {
@@ -3175,6 +3178,11 @@ input.error {
     width: 260px;
   }
 }
+@media (max-width: 767px) {
+  .my-orders-info .my-orders-slider-wrap .my-orders-slider .item {
+    width: 190px;
+  }
+}
 .my-orders-info .my-orders-slider-wrap .my-orders-slider .item .product-item-new .text-wrap {
   padding-left: 10px;
   padding-right: 10px;
@@ -3214,11 +3222,6 @@ input.error {
   justify-content: center;
   padding: 60px 0 20px;
 }
-@media (max-width: 1024px) {
-  .my-orders-info .my-orders-slider-wrap .my-orders-slider .item .item-info > .rate {
-    justify-content: flex-start;
-  }
-}
 .my-orders-info .my-orders-slider-wrap .my-orders-slider .item .item-info > .rate img {
   margin: 0 5px;
 }
@@ -3249,15 +3252,19 @@ input.error {
   align-self: flex-start;
   min-height: 415px;
 }
-@media (max-width: 1200px) {
-  .my-orders-info .add-link {
-    width: 100%;
-    margin: 20px 0;
-  }
-}
 @media (max-width: 767px) {
   .my-orders-info .add-link {
     padding: 15px;
+    position: absolute;
+    top: 2px;
+    margin: 0;
+    width: 100px;
+    min-width: 100px;
+    height: 340px;
+    padding: 10px;
+    font-size: 13px;
+    left: 0;
+    min-height: auto;
   }
 }
 .my-orders-info .add-link img {
@@ -3265,7 +3272,7 @@ input.error {
 }
 @media (max-width: 767px) {
   .my-orders-info .add-link img {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
 }
 
