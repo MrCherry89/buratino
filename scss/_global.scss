@@ -2476,21 +2476,16 @@ input.error {
 
 .my-orders-table {
   border-top: 1px solid rgba(132, 120, 105, 0.45);
-  overflow-x: auto;
-  .scroll {
-    @media (max-width: 1024px) {
-      min-width: 900px;
-    }
-  }
+  margin-top: -405px;
   .table-item {
-    padding: 20px 0;
+    padding: 20px 0 30px;
     border-bottom: 1px solid rgba(132, 120, 105, 0.45);
-    .title {
+    p {
       display: block;
-      margin-bottom: 20px;
       font-size: 16px;
       font-weight: bold;
       color: #353535;
+      margin-bottom: 20px;
       @media (max-width: 767px) {
         margin-bottom: 15px;
       }
@@ -2518,19 +2513,6 @@ input.error {
           }
         }
       }
-      .rate {
-        max-width: 230px;
-        width: 100%;
-        @include flex;
-        @include align-center;
-        @include justify-center;
-        @media (max-width: 1024px) {
-          justify-content: flex-start;
-        }
-        img {
-          margin: 0 5px;
-        }
-      }
     }
   }
 }
@@ -2546,6 +2528,7 @@ input.error {
     position: relative;
     z-index: 0;
     padding: 0 60px;
+    padding-left: 160px;
     @media (max-width: 767px) {
       width: 100%;
       padding: 0;
@@ -2563,6 +2546,7 @@ input.error {
         height: 50px;
         z-index: 10;
         border-radius: 50%;
+        top: 25%;
         background: #4c7972;
         @media (max-width: 1300px) {
           width: 40px;
@@ -2580,14 +2564,14 @@ input.error {
         }
         &.slick-next {
           right: 0;
-          @media (max-width: 1200px) {
-            right: 10px;
+          @media (max-width: 1400px) {
+            right: -10px;
           }
         }
         &.slick-prev {
-          left: 0;
-          @media (max-width: 1200px) {
-            left: 10px;
+          left: 100px;
+          @media (max-width: 1400px) {
+            left: 90px;
           }
         }
       }
@@ -2601,7 +2585,7 @@ input.error {
       }
       .item {
         margin: 0 10px;
-        @media (max-width: 1200px) {
+        @media (max-width: 1400px) {
           margin: 0;
           margin-left: 10px;
           width: 260px;
@@ -2612,6 +2596,34 @@ input.error {
             padding-right: 10px;
             .name {
               font-size: 12px;
+            }
+          }
+        }
+        .texts {
+          padding: 20px 0;
+          text-align: center;
+          min-height: 100px;
+          @include flex;
+          @include align-center;
+          @include justify-center;
+          span {
+            font-size: 16px;
+            line-height: 100%;
+            color: #39281c;
+          }
+        }
+        .item-info {
+          > .rate {
+            width: 100%;
+            @include flex;
+            @include align-center;
+            @include justify-center;
+            padding: 60px 0 20px;
+            @media (max-width: 1024px) {
+              justify-content: flex-start;
+            }
+            img {
+              margin: 0 5px;
             }
           }
         }
@@ -2633,6 +2645,8 @@ input.error {
     width: 150px;
     min-width: 150px;
     margin-left: 20px;
+    align-self: flex-start;
+    min-height: 415px;
     @media (max-width: 1200px) {
       width: 100%;
       margin: 20px 0;

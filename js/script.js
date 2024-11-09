@@ -92,7 +92,7 @@ $(document).ready(function () {
     nextArrow: $(".my-orders-slider-wrap .slider-navigation .slick-next"),
     responsive: [
       {
-        breakpoint: 1201,
+        breakpoint: 1401,
         settings: {
           variableWidth: true,
           slidesToShow: 1,
