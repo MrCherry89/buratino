@@ -2488,7 +2488,7 @@ input.error {
       margin-bottom: 20px;
       @media (max-width: 1024px) {
         margin-bottom: 15px;
-        font-size: 14px;
+        font-size: 13px !important;
       }
     }
     .info {
@@ -2532,7 +2532,7 @@ input.error {
     @media (max-width: 1024px) {
       width: 100%;
       padding: 0;
-      padding-left: 120px;
+      padding-left: 130px;
     }
 
     .slider-navigation {

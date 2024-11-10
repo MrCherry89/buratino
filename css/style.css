@@ -3041,7 +3041,7 @@ input.error {
 @media (max-width: 1024px) {
   .my-orders-table .table-item p {
     margin-bottom: 15px;
-    font-size: 14px;
+    font-size: 13px !important;
   }
 }
 .my-orders-table .table-item .info {
@@ -3101,7 +3101,7 @@ input.error {
   .my-orders-info .my-orders-slider-wrap {
     width: 100%;
     padding: 0;
-    padding-left: 120px;
+    padding-left: 130px;
   }
 }
 .my-orders-info .my-orders-slider-wrap .slider-navigation {
