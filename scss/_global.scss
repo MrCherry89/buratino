@@ -2477,9 +2477,13 @@ input.error {
 .my-orders-table {
   border-top: 1px solid rgba(132, 120, 105, 0.45);
   margin-top: -405px;
+  @media (max-width: 767px) {
+    margin-top: -390px;
+  }
   .table-item {
     padding: 20px 0 30px;
     border-bottom: 1px solid rgba(132, 120, 105, 0.45);
+
     p {
       display: block;
       font-size: 16px;
