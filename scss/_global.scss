@@ -2486,7 +2486,7 @@ input.error {
       font-weight: bold;
       color: #353535;
       margin-bottom: 20px;
-      @media (max-width: 767px) {
+      @media (max-width: 1024px) {
         margin-bottom: 15px;
         font-size: 14px;
       }
@@ -2508,9 +2508,7 @@ input.error {
           text-align: center;
           @media (max-width: 1024px) {
             text-align: left;
-          }
-          @media (max-width: 767px) {
-            font-size: 14px;
+            font-size: 13px;
           }
         }
       }
@@ -2521,7 +2519,7 @@ input.error {
 .my-orders-info {
   @include flex;
   margin-bottom: 30px;
-  @media (max-width: 767px) {
+  @media (max-width: 1024px) {
     @include dir-col;
     position: relative;
   }
@@ -2531,7 +2529,7 @@ input.error {
     z-index: 0;
     padding: 0 60px;
     padding-left: 160px;
-    @media (max-width: 767px) {
+    @media (max-width: 1024px) {
       width: 100%;
       padding: 0;
       padding-left: 120px;
@@ -2539,7 +2537,7 @@ input.error {
 
     .slider-navigation {
       position: static;
-      @media (max-width: 767px) {
+      @media (max-width: 1024px) {
         display: none;
       }
       button {
@@ -2593,15 +2591,25 @@ input.error {
           margin-left: 10px;
           width: 260px;
         }
-        @media (max-width: 767px) {
+        @media (max-width: 1024px) {
           width: 190px;
         }
         .product-item-new {
           .text-wrap {
             padding-left: 10px;
             padding-right: 10px;
+            .new-price {
+              @media (max-width: 1024px) {
+                font-size: 18px;
+                margin-right: 12px;
+              }
+            }
             .name {
               font-size: 12px;
+              @media (max-width: 1024px) {
+                max-height: 65px;
+                overflow: hidden;
+              }
             }
           }
         }
@@ -2619,12 +2627,25 @@ input.error {
           }
         }
         .item-info {
+          .texts {
+            span {
+              @media (max-width: 1024px) {
+                font-size: 13px;
+              }
+            }
+          }
           > .rate {
             width: 100%;
             @include flex;
             @include align-center;
             @include justify-center;
             padding: 60px 0 20px;
+            b,
+            span {
+              @media (max-width: 1024px) {
+                font-size: 13px;
+              }
+            }
             img {
               margin: 0 5px;
             }
@@ -2650,18 +2671,21 @@ input.error {
     margin-left: 20px;
     align-self: flex-start;
     min-height: 415px;
-    @media (max-width: 767px) {
+    @media (max-width: 1024px) {
       padding: 15px;
       position: absolute;
       top: 2px;
       margin: 0;
       width: 100px;
       min-width: 100px;
-      height: 340px;
+      height: 425px;
       padding: 10px;
       font-size: 13px;
       left: 0;
       min-height: auto;
+    }
+    @media (max-width: 767px) {
+      height: 345px;
     }
     img {
       margin-bottom: 15px;

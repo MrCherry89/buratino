@@ -99,7 +99,7 @@ $(document).ready(function () {
         },
       },
       {
-        breakpoint: 768,
+        breakpoint: 1025,
         settings: {
           variableWidth: true,
           slidesToShow: 1,
