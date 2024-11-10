@@ -3038,7 +3038,7 @@ input.error {
 }
 .my-orders-table .table-item p {
   display: block;
-  font-size: 14px;
+  font-size: 13px !important;
   font-weight: bold;
   color: #353535;
   margin-bottom: 20px;
@@ -3046,7 +3046,6 @@ input.error {
 @media (max-width: 1024px) {
   .my-orders-table .table-item p {
     margin-bottom: 15px;
-    font-size: 13px !important;
   }
 }
 .my-orders-table .table-item .info {
