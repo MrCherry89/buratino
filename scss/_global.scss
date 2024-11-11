@@ -2482,12 +2482,9 @@ input.error {
     border-bottom: 1px solid rgba(132, 120, 105, 0.45);
     p {
       display: block;
-      font-size: 16px;
+      font-size: 14px;
       font-weight: bold;
       color: #353535;
-      @media (max-width: 1200px) {
-        font-size: 14px;
-      }
     }
   }
 }
@@ -2597,27 +2594,21 @@ input.error {
           @include flex;
           @include align-center;
           span {
-            font-size: 16px;
-            line-height: 100%;
+            font-size: 14px;
+            line-height: 110%;
             color: #39281c;
             display: block;
             text-align: left;
             max-height: 32px;
             min-height: 32px;
             overflow: hidden;
-            @media (max-width: 1200px) {
-              font-size: 14px;
-              line-height: 110%;
-            }
           }
         }
         .item-info {
           .texts {
             text-align: left;
             span {
-              @media (max-width: 1200px) {
-                font-size: 14px;
-              }
+              font-size: 14px;
             }
           }
           > .rate {
@@ -2629,10 +2620,7 @@ input.error {
             text-align: left;
             b,
             span {
-              font-size: 16px;
-              @media (max-width: 1200px) {
-                font-size: 14px;
-              }
+              font-size: 14px;
             }
             img {
               margin: 0 5px;

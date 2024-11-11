@@ -3033,14 +3033,9 @@ input.error {
 }
 .my-orders-table .table-item p {
   display: block;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
   color: #353535;
-}
-@media (max-width: 1200px) {
-  .my-orders-table .table-item p {
-    font-size: 14px;
-  }
 }
 
 .my-orders-info {
@@ -3181,8 +3176,8 @@ input.error {
   align-items: center;
 }
 .my-orders-info .my-orders-slider-wrap .my-orders-slider .item .texts span {
-  font-size: 16px;
-  line-height: 100%;
+  font-size: 14px;
+  line-height: 110%;
   color: #39281c;
   display: block;
   text-align: left;
@@ -3190,19 +3185,11 @@ input.error {
   min-height: 32px;
   overflow: hidden;
 }
-@media (max-width: 1200px) {
-  .my-orders-info .my-orders-slider-wrap .my-orders-slider .item .texts span {
-    font-size: 14px;
-    line-height: 110%;
-  }
-}
 .my-orders-info .my-orders-slider-wrap .my-orders-slider .item .item-info .texts {
   text-align: left;
 }
-@media (max-width: 1200px) {
-  .my-orders-info .my-orders-slider-wrap .my-orders-slider .item .item-info .texts span {
-    font-size: 14px;
-  }
+.my-orders-info .my-orders-slider-wrap .my-orders-slider .item .item-info .texts span {
+  font-size: 14px;
 }
 .my-orders-info .my-orders-slider-wrap .my-orders-slider .item .item-info > .rate {
   width: 100%;
@@ -3218,13 +3205,7 @@ input.error {
 }
 .my-orders-info .my-orders-slider-wrap .my-orders-slider .item .item-info > .rate b,
 .my-orders-info .my-orders-slider-wrap .my-orders-slider .item .item-info > .rate span {
-  font-size: 16px;
-}
-@media (max-width: 1200px) {
-  .my-orders-info .my-orders-slider-wrap .my-orders-slider .item .item-info > .rate b,
-.my-orders-info .my-orders-slider-wrap .my-orders-slider .item .item-info > .rate span {
-    font-size: 14px;
-  }
+  font-size: 14px;
 }
 .my-orders-info .my-orders-slider-wrap .my-orders-slider .item .item-info > .rate img {
   margin: 0 5px;
