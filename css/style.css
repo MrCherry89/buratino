@@ -3033,9 +3033,10 @@ input.error {
 }
 .my-orders-table .table-item p {
   display: block;
-  font-size: 12px !important;
+  font-size: 14px;
   font-weight: bold;
   color: #353535;
+  max-width: 120px;
 }
 
 .my-orders-info {
@@ -3118,6 +3119,9 @@ input.error {
   .my-orders-info .my-orders-slider-wrap .slider-navigation button.slick-prev {
     left: 90px;
   }
+}
+.my-orders-info .my-orders-slider-wrap .my-orders-slider {
+  margin-bottom: 0 !important;
 }
 .my-orders-info .my-orders-slider-wrap .my-orders-slider .slick-list {
   margin: 0 -10px;

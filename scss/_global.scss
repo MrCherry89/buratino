@@ -2253,8 +2253,6 @@ input.error {
             @media (max-width: 767px) {
               text-align: right;
             }
-            span {
-            }
           }
           .delete {
             margin-left: auto;
@@ -2482,9 +2480,10 @@ input.error {
     border-bottom: 1px solid rgba(132, 120, 105, 0.45);
     p {
       display: block;
-      font-size: 12px !important;
+      font-size: 14px;
       font-weight: bold;
       color: #353535;
+      max-width: 120px;
     }
   }
 }
@@ -2551,6 +2550,7 @@ input.error {
       }
     }
     .my-orders-slider {
+      margin-bottom: 0 !important;
       .slick-list {
         margin: 0 -10px;
         @media (max-width: 1400px) {
