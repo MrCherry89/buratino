@@ -3037,7 +3037,7 @@ input.error {
   font-weight: bold;
   color: #353535;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .my-orders-table .table-item p {
     font-size: 14px;
   }
@@ -3190,7 +3190,7 @@ input.error {
   min-height: 32px;
   overflow: hidden;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .my-orders-info .my-orders-slider-wrap .my-orders-slider .item .texts span {
     font-size: 14px;
     line-height: 110%;
@@ -3199,7 +3199,7 @@ input.error {
 .my-orders-info .my-orders-slider-wrap .my-orders-slider .item .item-info .texts {
   text-align: left;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .my-orders-info .my-orders-slider-wrap .my-orders-slider .item .item-info .texts span {
     font-size: 14px;
   }
@@ -3220,7 +3220,7 @@ input.error {
 .my-orders-info .my-orders-slider-wrap .my-orders-slider .item .item-info > .rate span {
   font-size: 16px;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .my-orders-info .my-orders-slider-wrap .my-orders-slider .item .item-info > .rate b,
 .my-orders-info .my-orders-slider-wrap .my-orders-slider .item .item-info > .rate span {
     font-size: 14px;

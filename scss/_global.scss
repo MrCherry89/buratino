@@ -2485,7 +2485,7 @@ input.error {
       font-size: 16px;
       font-weight: bold;
       color: #353535;
-      @media (max-width: 1024px) {
+      @media (max-width: 1200px) {
         font-size: 14px;
       }
     }
@@ -2605,7 +2605,7 @@ input.error {
             max-height: 32px;
             min-height: 32px;
             overflow: hidden;
-            @media (max-width: 1024px) {
+            @media (max-width: 1200px) {
               font-size: 14px;
               line-height: 110%;
             }
@@ -2615,7 +2615,7 @@ input.error {
           .texts {
             text-align: left;
             span {
-              @media (max-width: 1024px) {
+              @media (max-width: 1200px) {
                 font-size: 14px;
               }
             }
@@ -2630,7 +2630,7 @@ input.error {
             b,
             span {
               font-size: 16px;
-              @media (max-width: 1024px) {
+              @media (max-width: 1200px) {
                 font-size: 14px;
               }
             }
