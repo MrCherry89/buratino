@@ -2476,44 +2476,17 @@ input.error {
 
 .my-orders-table {
   border-top: 1px solid rgba(132, 120, 105, 0.45);
-  margin-top: -405px;
-  @media (max-width: 767px) {
-    margin-top: -390px;
-  }
+  margin-top: -320px;
   .table-item {
-    padding: 20px 0 30px;
+    padding: 25px 0;
     border-bottom: 1px solid rgba(132, 120, 105, 0.45);
-
     p {
       display: block;
-      font-size: 13px !important;
+      font-size: 16px;
       font-weight: bold;
       color: #353535;
-      margin-bottom: 20px;
       @media (max-width: 1024px) {
-        margin-bottom: 15px;
-      }
-    }
-    .info {
-      @include flex;
-      @include justify-between;
-      padding-left: 170px;
-      @media (max-width: 1024px) {
-        padding-left: 0;
-      }
-      .texts {
-        max-width: 230px;
-        width: 100%;
-        span {
-          color: #39281c;
-          font-size: 16px;
-          display: block;
-          text-align: center;
-          @media (max-width: 1024px) {
-            text-align: left;
-            font-size: 13px;
-          }
-        }
+        font-size: 14px;
       }
     }
   }
@@ -2583,7 +2556,7 @@ input.error {
     .my-orders-slider {
       .slick-list {
         margin: 0 -10px;
-        @media (max-width: 1200px) {
+        @media (max-width: 1400px) {
           margin: 0;
         }
       }
@@ -2598,6 +2571,7 @@ input.error {
           width: 190px;
         }
         .product-item-new {
+          margin-bottom: 20px;
           .text-wrap {
             padding-left: 10px;
             padding-right: 10px;
@@ -2618,22 +2592,31 @@ input.error {
         }
         .texts {
           padding: 20px 0;
-          text-align: center;
-          min-height: 100px;
+          padding-left: 10px;
+          text-align: left;
           @include flex;
           @include align-center;
-          @include justify-center;
           span {
             font-size: 16px;
             line-height: 100%;
             color: #39281c;
+            display: block;
+            text-align: left;
+            max-height: 32px;
+            min-height: 32px;
+            overflow: hidden;
+            @media (max-width: 1024px) {
+              font-size: 14px;
+              line-height: 110%;
+            }
           }
         }
         .item-info {
           .texts {
+            text-align: left;
             span {
               @media (max-width: 1024px) {
-                font-size: 13px;
+                font-size: 14px;
               }
             }
           }
@@ -2641,12 +2624,14 @@ input.error {
             width: 100%;
             @include flex;
             @include align-center;
-            @include justify-center;
-            padding: 60px 0 20px;
+            padding: 25px 0;
+            padding-left: 10px;
+            text-align: left;
             b,
             span {
+              font-size: 16px;
               @media (max-width: 1024px) {
-                font-size: 13px;
+                font-size: 14px;
               }
             }
             img {

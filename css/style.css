@@ -3025,57 +3025,21 @@ input.error {
 
 .my-orders-table {
   border-top: 1px solid rgba(132, 120, 105, 0.45);
-  margin-top: -405px;
-}
-@media (max-width: 767px) {
-  .my-orders-table {
-    margin-top: -390px;
-  }
+  margin-top: -320px;
 }
 .my-orders-table .table-item {
-  padding: 20px 0 30px;
+  padding: 25px 0;
   border-bottom: 1px solid rgba(132, 120, 105, 0.45);
 }
 .my-orders-table .table-item p {
   display: block;
-  font-size: 13px !important;
+  font-size: 16px;
   font-weight: bold;
   color: #353535;
-  margin-bottom: 20px;
 }
 @media (max-width: 1024px) {
   .my-orders-table .table-item p {
-    margin-bottom: 15px;
-  }
-}
-.my-orders-table .table-item .info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  padding-left: 170px;
-}
-@media (max-width: 1024px) {
-  .my-orders-table .table-item .info {
-    padding-left: 0;
-  }
-}
-.my-orders-table .table-item .info .texts {
-  max-width: 230px;
-  width: 100%;
-}
-.my-orders-table .table-item .info .texts span {
-  color: #39281c;
-  font-size: 16px;
-  display: block;
-  text-align: center;
-}
-@media (max-width: 1024px) {
-  .my-orders-table .table-item .info .texts span {
-    text-align: left;
-    font-size: 13px;
+    font-size: 14px;
   }
 }
 
@@ -3163,7 +3127,7 @@ input.error {
 .my-orders-info .my-orders-slider-wrap .my-orders-slider .slick-list {
   margin: 0 -10px;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   .my-orders-info .my-orders-slider-wrap .my-orders-slider .slick-list {
     margin: 0;
   }
@@ -3182,6 +3146,9 @@ input.error {
   .my-orders-info .my-orders-slider-wrap .my-orders-slider .item {
     width: 190px;
   }
+}
+.my-orders-info .my-orders-slider-wrap .my-orders-slider .item .product-item-new {
+  margin-bottom: 20px;
 }
 .my-orders-info .my-orders-slider-wrap .my-orders-slider .item .product-item-new .text-wrap {
   padding-left: 10px;
@@ -3204,26 +3171,37 @@ input.error {
 }
 .my-orders-info .my-orders-slider-wrap .my-orders-slider .item .texts {
   padding: 20px 0;
-  text-align: center;
-  min-height: 100px;
+  padding-left: 10px;
+  text-align: left;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
 }
 .my-orders-info .my-orders-slider-wrap .my-orders-slider .item .texts span {
   font-size: 16px;
   line-height: 100%;
   color: #39281c;
+  display: block;
+  text-align: left;
+  max-height: 32px;
+  min-height: 32px;
+  overflow: hidden;
+}
+@media (max-width: 1024px) {
+  .my-orders-info .my-orders-slider-wrap .my-orders-slider .item .texts span {
+    font-size: 14px;
+    line-height: 110%;
+  }
+}
+.my-orders-info .my-orders-slider-wrap .my-orders-slider .item .item-info .texts {
+  text-align: left;
 }
 @media (max-width: 1024px) {
   .my-orders-info .my-orders-slider-wrap .my-orders-slider .item .item-info .texts span {
-    font-size: 13px;
+    font-size: 14px;
   }
 }
 .my-orders-info .my-orders-slider-wrap .my-orders-slider .item .item-info > .rate {
@@ -3234,15 +3212,18 @@ input.error {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 60px 0 20px;
+  padding: 25px 0;
+  padding-left: 10px;
+  text-align: left;
+}
+.my-orders-info .my-orders-slider-wrap .my-orders-slider .item .item-info > .rate b,
+.my-orders-info .my-orders-slider-wrap .my-orders-slider .item .item-info > .rate span {
+  font-size: 16px;
 }
 @media (max-width: 1024px) {
   .my-orders-info .my-orders-slider-wrap .my-orders-slider .item .item-info > .rate b,
 .my-orders-info .my-orders-slider-wrap .my-orders-slider .item .item-info > .rate span {
-    font-size: 13px;
+    font-size: 14px;
   }
 }
 .my-orders-info .my-orders-slider-wrap .my-orders-slider .item .item-info > .rate img {
