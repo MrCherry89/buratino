@@ -3033,7 +3033,7 @@ input.error {
 }
 .my-orders-table .table-item p {
   display: block;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: bold;
   color: #353535;
   max-width: 120px;
