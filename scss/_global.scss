@@ -2409,6 +2409,9 @@ input.error {
     }
   }
   &.useful-articles2 {
+    @media (max-width: 767px) {
+      margin-top: 0;
+    }
     .wrapper {
       @media (max-width: 767px) {
         padding-right: 0;

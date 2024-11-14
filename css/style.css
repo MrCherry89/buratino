@@ -2954,6 +2954,12 @@ input.error {
   min-height: inherit;
 }
 @media (max-width: 767px) {
+  .useful-articles.useful-articles2,
+.useful-articles2.useful-articles2 {
+    margin-top: 0;
+  }
+}
+@media (max-width: 767px) {
   .useful-articles.useful-articles2 .wrapper,
 .useful-articles2.useful-articles2 .wrapper {
     padding-right: 0;
@@ -3387,6 +3393,11 @@ input.error {
 @media (max-width: 767px) {
   .useful-articles .wrapper .title-wrap {
     margin-bottom: 20px;
+  }
+}
+@media (max-width: 1024px) {
+  .useful-articles .wrapper .title-wrap .slider-navigation {
+    display: none;
   }
 }
 @media (max-width: 767px) {
@@ -4556,11 +4567,25 @@ input.error {
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
 }
+@media (max-width: 767px) {
+  .breadcrumbs {
+    max-width: 100%;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
 .breadcrumbs li {
   margin-right: 20px;
   margin-bottom: 10px;
   position: relative;
   z-index: 0;
+}
+@media (max-width: 767px) {
+  .breadcrumbs li {
+    white-space: nowrap;
+  }
 }
 .breadcrumbs li:after {
   content: "/";
@@ -6889,7 +6914,7 @@ input.error {
     width: 100%;
   }
 }
-.filters-info .right-info .show-all {
+.filters-info .right-info .show-all-video {
   width: 100%;
   margin-top: 20px;
   display: -webkit-box;
@@ -6909,7 +6934,7 @@ input.error {
   border-radius: 10px;
   min-height: 40px;
 }
-.filters-info .right-info .show-all:hover {
+.filters-info .right-info .show-all-video:hover {
   background: #4c7972;
   color: #fff;
 }
@@ -7351,7 +7376,7 @@ input.error {
   color: #353535;
 }
 .product-page-wrapper .product-page-info .info-left .product-page-wrap {
-  margin-bottom: 60px;
+  margin-bottom: 80px;
 }
 .product-page-wrapper .product-page-info .info-left .product-page-wrap .title-wrap {
   display: -webkit-box;
@@ -7364,6 +7389,11 @@ input.error {
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin-bottom: 30px;
+}
+@media (max-width: 1024px) {
+  .product-page-wrapper .product-page-info .info-left .product-page-wrap .title-wrap .slider-navigation {
+    display: none;
+  }
 }
 @media (max-width: 1300px) {
   .product-page-wrapper .product-page-info .info-left .product-page-wrap .title-wrap .main-title {
@@ -7395,11 +7425,17 @@ input.error {
 }
 @media (max-width: 767px) {
   .product-page-wrapper .product-page-info .info-left .review-slider-wrap {
-    margin-top: 60px;
+    margin-top: 70px;
+    padding-bottom: 60px;
   }
 }
 .product-page-wrapper .product-page-info .info-left .review-slider-wrap .slider-navigation {
   width: 100%;
+}
+@media (max-width: 1024px) {
+  .product-page-wrapper .product-page-info .info-left .review-slider-wrap .slider-navigation {
+    display: none;
+  }
 }
 .product-page-wrapper .product-page-info .info-left .review-slider-wrap .title-wrap {
   display: -webkit-box;
