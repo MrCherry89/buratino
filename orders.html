@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+
     <meta http-equiv="x-ua-compatible" content="IE=edge" />
     <title>Buration</title>
     <link rel="stylesheet" href="css/slick.css" />
@@ -178,10 +182,12 @@
             </button>
           </form>
           <div class="phone-wrap">
-            <a href="tel:+77272222525" class="phone"
+            <a href="#order-call-popup" class="phone popup"
               >+7 (727) 222 25 25 <img src="img/phone-icon.svg" alt=""
             /></a>
-            <a href="#" class="order-call">заказать звонок</a>
+            <a href="#order-call-popup" class="order-call popup"
+              >заказать звонок</a
+            >
           </div>
           <div class="buttons-top">
             <div class="select-wrap">
@@ -213,32 +219,140 @@
       </div>
     </header>
 
-    <div class="wrapper">
-      <ul class="test-links">
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="thank.html">Спасибо</a></li>
-        <li><a href="videos.html">Видео</a></li>
-        <li><a href="nothing-found.html">Не найдено</a></li>
-        <li><a href="search-results.html">Результаты поиска</a></li>
-        <li><a href="registration.html">Регистрация</a></li>
-        <li><a href="catalog.html">Каталог</a></li>
-        <li><a href="articles.html">Статьи</a></li>
-        <li><a href="catalog-in.html">Категории</a></li>
-        <li><a href="stock.html">Акции</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
-        <li><a href="account-address.html">Мои адреса</a></li>
-        <li><a href="account-favorite.html">Избранное</a></li>
-        <li><a href="account-profile.html">Настройки профиля</a></li>
-        <li><a href="placing-order.html">Оформление заказа</a></li>
-        <li><a href="placing-order-legal.html"> Оплата ЮЛ</a></li>
-        <li><a href="placing-order-pickup.html">Самовывоз</a></li>
-        <li><a href="placing-order-delivery.html">Доставка курьером </a></li>
-        <li><a href="basket.html">Корзина </a></li>
-        <li><a href="product-page.html">Страница товара </a></li>
-        <li><a href="my-orders.html">Сравнение товаров</a></li>
-        <li><a href="orders.html">Мои заказы</a></li>
-        <li><a href="orders-in.html">Мои заказы деталка</a></li>
-      </ul>
+    <div class="account">
+      <div class="wrapper">
+        <h2 class="main-title">Личный кабинет</h2>
+        <div class="account-info">
+          <div class="links">
+            <a href="#">Настройки профиля</a>
+            <a href="#" class="active">Мои заказы</a>
+            <a href="#">Избранное</a>
+            <a href="#">Мои адреса</a>
+          </div>
+          <div class="order-information">
+            <div class="title-wrap">
+              <h2>Мои заказы</h2>
+              <ul class="tab-menu">
+                <li class="active"><button type="button">Текущие</button></li>
+                <li><button type="button">Завершенные</button></li>
+              </ul>
+            </div>
+            <div class="tab-content">
+              <div class="tab-content-item active">
+                <div class="order-wrap">
+                  <div class="left-info">
+                    <h4>Заказ <span>№ 784978203</span></h4>
+                    <a href="orders-in.html" class="details-link"
+                      >Детали заказа</a
+                    >
+                    <div class="date">от 15 октября 2024 в 15:20</div>
+                  </div>
+                  <div class="right-info">
+                    <ul class="order-list">
+                      <li>
+                        <span>Общая стоимость </span>
+                        <span>211 500 ₸</span>
+                      </li>
+                      <li>
+                        <span>Кол-во товаров в заказе </span>
+                        <span>5 шт.</span>
+                      </li>
+                      <li>
+                        <span>Способ оплаты </span>
+                        <span>При получении</span>
+                      </li>
+                      <li>
+                        <span>Способ получения </span>
+                        <span>Самовывоз</span>
+                      </li>
+                      <li>
+                        <span>Адрес самовывоза </span>
+                        <span>г. Алматы, ул. Радостовца, 299</span>
+                      </li>
+                      <li>
+                        <span>Ожидаемая дата доставки</span>
+                        <span>16 октября 2024 г. с 12:00 до 18:00</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-content-item">
+                <div class="order-wrap">
+                  <div class="left-info">
+                    <h4>Заказ <span>№ 784978203</span></h4>
+                    <a href="orders.html" class="details-link">Детали заказа</a>
+                    <div class="date">от 15 октября 2024 в 15:20</div>
+                  </div>
+                  <div class="right-info">
+                    <ul class="order-list">
+                      <li>
+                        <span>Общая стоимость </span>
+                        <span>211 500 ₸</span>
+                      </li>
+                      <li>
+                        <span>Кол-во товаров в заказе </span>
+                        <span>5 шт.</span>
+                      </li>
+                      <li>
+                        <span>Способ оплаты </span>
+                        <span>При получении</span>
+                      </li>
+                      <li>
+                        <span>Способ получения </span>
+                        <span>Самовывоз</span>
+                      </li>
+                      <li>
+                        <span>Адрес самовывоза </span>
+                        <span>г. Алматы, ул. Радостовца, 299</span>
+                      </li>
+                      <li>
+                        <span>Ожидаемая дата доставки</span>
+                        <span>16 октября 2024 г. с 12:00 до 18:00</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="order-wrap">
+                  <div class="left-info">
+                    <h4>Заказ <span>№ 784978203</span></h4>
+                    <a href="orders.html" class="details-link">Детали заказа</a>
+                    <div class="date">от 15 октября 2024 в 15:20</div>
+                  </div>
+                  <div class="right-info">
+                    <ul class="order-list">
+                      <li>
+                        <span>Общая стоимость </span>
+                        <span>211 500 ₸</span>
+                      </li>
+                      <li>
+                        <span>Кол-во товаров в заказе </span>
+                        <span>5 шт.</span>
+                      </li>
+                      <li>
+                        <span>Способ оплаты </span>
+                        <span>При получении</span>
+                      </li>
+                      <li>
+                        <span>Способ получения </span>
+                        <span>Самовывоз</span>
+                      </li>
+                      <li>
+                        <span>Адрес самовывоза </span>
+                        <span>г. Алматы, ул. Радостовца, 299</span>
+                      </li>
+                      <li>
+                        <span>Ожидаемая дата доставки</span>
+                        <span>16 октября 2024 г. с 12:00 до 18:00</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <footer class="footer">
@@ -332,6 +446,59 @@
       </div>
     </footer>
 
+    <div id="stock-popup" class="mfp-hide white-popup mfp-with-anim main-popup">
+      <div class="popup-body">
+        <button title="Close (Esc)" type="button" class="mfp-close"></button>
+        <div class="popup-info">
+          <div class="texts">
+            <b>Скидка 15% на покупку камней для бани</b>
+            <span>Подробные условия уточняйте у наших менеджеров</span>
+          </div>
+          <div class="img-wrap">
+            <img src="img/stock-popup-img.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="order-call-popup"
+      class="mfp-hide white-popup mfp-with-anim main-popup"
+    >
+      <div class="popup-body">
+        <button title="Close (Esc)" type="button" class="mfp-close"></button>
+        <div class="popup-info">
+          <form class="order-call-form" id="order-call-form">
+            <h2 class="main-title">Закажите обратный звонок</h2>
+            <p>
+              Заполните форму ниже, и наш менеджер свяжется с Вами в течение 20
+              минут и ответит на все Ваши вопросы
+            </p>
+            <div class="form-wrap">
+              <input type="text" placeholder="Ваше имя" />
+              <input
+                type="tel"
+                placeholder="+7 (999) 999-99-99"
+                class="phone-number-input"
+              />
+              <button class="green-btn">Заказать обратный звонок</button>
+              <div class="checkbox-wrap2">
+                <label>
+                  <input type="checkbox" checked />
+                  <span></span>
+                  Я даю согласие на
+                  <a href="#">обработку персональных данных</a>
+                </label>
+              </div>
+            </div>
+          </form>
+          <div class="img-wrap">
+            <img src="img/order-call-popup-img.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.smooth-scroll.min.js"></script>
@@ -339,6 +506,7 @@
     <script src="js/select2.min.js"></script>
     <script src="js/aos.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.validate.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
