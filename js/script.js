@@ -585,5 +585,61 @@ $(document).ready(function () {
     ],
   });
 
+  $(".slider-for2").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: false,
+    asNavFor: ".slider-nav2",
+  });
+
+  $(".slider-nav2").slick({
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    asNavFor: ".slider-for2",
+    dots: false,
+    arrows: true,
+    focusOnSelect: true,
+    prevArrow: $("#popup .slider-nav-wrap .slider-navigation .slick-prev"),
+    nextArrow: $("#popup .slider-nav-wrap .slider-navigation .slick-next"),
+    responsive: [
+      {
+        breakpoint: 1301,
+        settings: {
+          slidesToShow: 5,
+          focusOnSelect: true,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          vertical: false,
+          centerMode: true,
+          slidesToShow: 3,
+          focusOnSelect: true,
+        },
+      },
+      {
+        breakpoint: 550,
+        settings: {
+          slidesToShow: 2,
+          focusOnSelect: true,
+        },
+      },
+    ],
+  });
+
+  $(".open-popup").magnificPopup({
+    type: "inline",
+    midClick: true,
+    callbacks: {
+      open: function () {
+        // Инициализация или обновление слайдера после открытия попапа
+        $(".slider-for2").slick("setPosition");
+        $(".slider-nav2").slick("setPosition");
+      },
+    },
+  });
+
   AOS.init();
 });
